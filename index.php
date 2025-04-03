@@ -7,14 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    
+    .animais{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .animal{
+        display: flex;
+        border-color: black;
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+    .animal img{
+        width: 200px;
+        height: 200px;
+    }
 </style>
 <body>
     <div class="main">
         <?php include("cabecalho.html") ?>
         <div class="conteudo">
-            <h1>Conteúdo da Página</h1>
-            <p>Este é o conteúdo principal da página.</p>
+            <h1>Animais :)</h1>
+            <div class="animais">
+                <div class="animal" >
+                    <h1>Cachorro</h1>
+                    <img src = "cachorro.jpg">
+                    <p>Esse animal é um cachorrosdadsadadsadsadas.</p>
+                </div>
+                <div class="animal" >
+                    <h1>Elefante</h1>
+                    <img src = "elefante.jpg">
+                    <p>Esse animal é um elefante.</p>
+                </div>
+                <div class="animal" >
+                    <h1>Girafa</h1>
+                    <p>Esse animal é um girafa.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
