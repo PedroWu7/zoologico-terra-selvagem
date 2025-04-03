@@ -10,16 +10,23 @@
     form {
         padding: 10px;
     }
+    .conteudo {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+    }
 </style>
 <body>
-    <?php include("cabecalho.html") ?>
-    <div class="conteudo">
-        <h1>Login</h1>
-        <form method="post">
-            Usuário ou email<br> <input name="usuario" type="text"><br>
-            Senha<br> <input name="senha" type="password">
-        </form>
+    <div class="main">
+        <?php include("cabecalho.html") ?>
+        <div class="conteudo">
+            <h1 style="font-size: 25px">Login</h1>
+            <form method="post">
+                Usuário<br> <input name="usuario" type="text"><br>
+                Senha<br> <input name="senha" type="password">
+            </form>
+        </div>
     </div>
-    <?php include("rodape.html") ?>
 </body>
 </html>
