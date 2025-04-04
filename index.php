@@ -43,14 +43,16 @@ if(file_exists($arquivo)) {
 </style>
 <body>
     <div class="main">
-        <?php include("cabecalho.html");
-        foreach($catalogo as $item): ?>
-            <div class="item">
-                <h2><?php echo $item['nome']; ?></h2>
-                <img src="<?php echo $item['imagem']; ?>"alt="<?php echo $item['nome'];?> ">
-                <p><?php echo $item['descricao']; ?></p>
-            </div>
-        <?php endforeach; ?>
+        <?php include("cabecalho.html");?>
+        <div class="conteudo">
+            <?php foreach($catalogo as $item): ?>
+                <div class="item">
+                    <h2><?php echo $item['nome']; ?></h2>
+                    <img src="<?php echo $item['imagem']; ?>"alt="<?php echo $item['nome'];?> ">
+                    <p><?php echo $item['descricao']; ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 </body>
 </html>
