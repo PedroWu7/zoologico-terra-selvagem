@@ -3,6 +3,10 @@
         "nome": "Gato",
         "imagem": "gato.jpg",
         "descricao": "Este animal \u00e9 um gato."
+    },
+    {
+        "nome": "vaca",
+        "imagem": "https://th.bing.com/th/id/R.7b7e97f53a043cc70379d009a71c876f?rik=LDeQYVhl9o7N5g&pid=ImgRaw&r=0",
+        "descricao": "vaca 1"
     }
-    
 ]

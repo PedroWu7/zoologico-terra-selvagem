@@ -55,7 +55,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="imagem" required><br><br> 
 
         <label>Descrição: </label><br>
-        <textarea name="descricao" required></textarea><br><br> 
+        <input type="text" name="descricao" required><br><br>
 
         <button type="submit"> Adicionar </button> 
     </form>
