@@ -20,9 +20,32 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-style: groove;
     width: 100%;
     height: 100%;
+    background-color: white;
+}
+
+form {
+    height: 300px;
+    border-style: groove;
     border-color: black;
     background-color: white;
+    padding: 20px;
+}
+
+.conteudo {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: center;
+}
+
+div h1 {
+    font-size: 25px; 
+    padding: 0px; 
+    margin: 0px; 
+    text-align: left;
 }
