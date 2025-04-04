@@ -1,6 +1,15 @@
 <?php 
 session_start();
 
+$arquivo = "catalogo.json";
+
+if(file_exists($arquivo)) {
+    $json = file_get_contents($arquivo);
+    $catalogo = json_decode($json, true);
+}else{
+    $catalogo = [];
+
+}
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
@@ -14,19 +23,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         "descricao" => $descricao,
     ];
 
-    if(!isset($_SESSION["catalogo"])){
-
-        $_SESSION["catalogo"] = [];
-    }
-
-    $_SESSION["catalogo"][] = $novoItem;
+    $catalogo[] = $novoItem;
+    file_put_contents($arquivo, json_encode($catalogo, JSON_PRETTY_PRINT));
 
     header("Location: index.php");
     exit();
 
-
 }
-$catalogo = $_SESSION["catalogo"];
+
 ?>
 
 

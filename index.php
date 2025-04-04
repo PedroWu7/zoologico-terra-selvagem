@@ -1,10 +1,16 @@
 <?php
 session_start();
 
-if(!isset($_SESSION["catalogo"])) {
-    $_SESSION["catalogo"] = [];
+$arquivo = "catalogo.json";
+
+if(file_exists($arquivo)) {
+    $json = file_get_contents($arquivo);
+    $catalogo = json_decode($json, true);
+}else{
+    $catalogo = [];
+
 }
-$catalogo = $_SESSION["catalogo"];
+
 ?>
 
 <!DOCTYPE html>
