@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["catalogo"])) {
+    $_SESSION["catalogo"] = [];
+}
+$catalogo = $_SESSION["catalogo"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,26 +37,14 @@
 </style>
 <body>
     <div class="main">
-        <?php include("cabecalho.html") ?>
-        <div class="conteudo">
-            <h1>Animais :)</h1>
-            <div class="animais">
-                <div class="animal" >
-                    <h1>Cachorro</h1>
-                    <img src = "cachorro.jpg">
-                    <p>Esse animal é um cachorrosdadsadadsadsadas.</p>
-                </div>
-                <div class="animal" >
-                    <h1>Elefante</h1>
-                    <img src = "elefante.jpg">
-                    <p>Esse animal é um elefante.</p>
-                </div>
-                <div class="animal" >
-                    <h1>Girafa</h1>
-                    <p>Esse animal é um girafa.</p>
-                </div>
+        <?php include("cabecalho.html");
+        foreach($catalogo as $item): ?>
+            <div class="item">
+                <h2><?php echo $item['nome']; ?></h2>
+                <img src="<?php echo $item['imagem']; ?>"alt="<?php echo $item['nome'];?> ">
+                <p><?php echo $item['descricao']; ?></p>
             </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </body>
 </html>
