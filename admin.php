@@ -1,6 +1,11 @@
 <?php 
 session_start();
 
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    // Se não estiver logado, redireciona para a página de login
+    header("Location: login.php");
+}
+
 $arquivo = "catalogo.json";
 
 if(file_exists($arquivo)) {
@@ -47,20 +52,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 </style>
 <body>
     <div class="main">
-    <?php include("cabecalho.html");?>
-        <h1> Adicionar novo jogo</h1>
-        <form method="POST">
-            <label>Nome: </label><br>
-            <input type="text" name="nome" required><br><br> 
+        <?php include("cabecalho.html");?>
+        <div class="conteudo">
+            <h1> Adicionar novo jogo</h1>
+            <form method="POST">
+                <label>Nome: </label><br>
+                <input type="text" name="nome" required><br><br> 
         
-            <label>Imagem: </label><br>
-            <input type="text" name="imagem" required><br><br> 
+                <label>Imagem: </label><br>
+                <input type="text" name="imagem" required><br><br> 
 
-            <label>Descrição: </label><br>
-            <input type="text" name="descricao" required><br><br>
+                <label>Descrição: </label><br>
+                <input type="text" name="descricao" required><br><br>
 
-            <button type="submit"> Adicionar </button> 
-        </form>
+                <button type="submit"> Adicionar </button> 
+            </form>
+        </div>
     </div>
 </body>
 </html>
