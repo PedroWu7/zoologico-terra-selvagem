@@ -27,7 +27,7 @@ if(file_exists($arquivo)) {
         flex-direction: row;
 
     }
-    .animal{
+    .item{
         display: flex;
         border-color: black;
         border: 1px solid;
@@ -36,7 +36,7 @@ if(file_exists($arquivo)) {
         flex-direction: column;
 
     }
-    .animal img{
+    .item img{
         width: 200px;
         height: 200px;
     }
@@ -45,13 +45,15 @@ if(file_exists($arquivo)) {
     <div class="main">
         <?php include("cabecalho.html");?>
         <div class="conteudo">
-            <?php foreach($catalogo as $item): ?>
-                <div class="item">
-                    <h2><?php echo $item['nome']; ?></h2>
-                    <img src="<?php echo $item['imagem']; ?>"alt="<?php echo $item['nome'];?> ">
-                    <p><?php echo $item['descricao']; ?></p>
-                </div>
+            <div class="animais">
+                <?php foreach($catalogo as $item): ?>
+                    <div class="item">
+                        <h2><?php echo $item['nome']; ?></h2>
+                        <img src="<?php echo $item['imagem']; ?>"alt="<?php echo $item['nome'];?> ">
+                        <p><?php echo $item['descricao']; ?></p>
+                    </div>
             <?php endforeach; ?>
+            </div>
         </div>
     </div>
 </body>

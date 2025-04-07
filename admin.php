@@ -46,18 +46,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     
 </style>
 <body>
-    <h1> Adicionar novo jogo</h1>
-    <form method="POST">
-        <label>Nome: </label><br>
-        <input type="text" name="nome" required><br><br> 
+    <div class="main">
+    <?php include("cabecalho.html");?>
+        <h1> Adicionar novo jogo</h1>
+        <form method="POST">
+            <label>Nome: </label><br>
+            <input type="text" name="nome" required><br><br> 
         
-        <label>Imagem: </label><br>
-        <input type="text" name="imagem" required><br><br> 
+            <label>Imagem: </label><br>
+            <input type="text" name="imagem" required><br><br> 
 
-        <label>Descrição: </label><br>
-        <input type="text" name="descricao" required><br><br>
+            <label>Descrição: </label><br>
+            <input type="text" name="descricao" required><br><br>
 
-        <button type="submit"> Adicionar </button> 
-    </form>
+            <button type="submit"> Adicionar </button> 
+        </form>
+    </div>
 </body>
 </html>
