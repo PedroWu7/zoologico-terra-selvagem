@@ -65,6 +65,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label>Descrição: </label><br>
                 <input type="text" name="descricao" required><br><br>
 
+                <label>Terrestre/aquático/aéreo: </label><br>
+                <input type="text" name="terrestre" required><br><br>
+
                 <button type="submit"> Adicionar </button> 
             </form>
         </div>

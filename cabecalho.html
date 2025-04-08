@@ -3,46 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            display: flex;
+            width: 100%;
+            height: 7%;
+            flex-direction: row;
+            background-color: black;
+            justify-content: space-between; /* Distribui o espaço entre a navegação e a busca */
+            align-items: center;
+            padding: 0 20px; /* Adiciona um padding para não colar os elementos nas bordas */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; /* Centraliza os links de navegação */
+            flex-direction: row;
+            width: 100%; /* Faz o nav ocupar todo o espaço disponível */
+        }
+
+        a {
+            font-size: 20px;
+            color: white;
+            padding-right: 15px;
+            text-decoration: none;
+        }
+
+        #buscador {
+            display: flex;
+            justify-content: flex-end; /* Alinha o buscador à direita */
+            align-items: center;
+            color: white;
+        }
+
+        #buscador input {
+            margin-left: 10px;
+            padding: 5px;
+        }
+
+    </style>
 </head>
-<style>
-    header {
-        display: flex;
-        width: 100%;
-        height: 7%;
-        flex-direction: row;
-        background-color: black;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: relative;
-    }
-    nav{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-    a {
-        font-size: 20px;
-        color: white;
-        padding-right: 15px;
-        text-decoration: none;
-    }
-    div {
-        justify-content: right;
-        align-items: right;
-        text-align: right;
-    }
-    
-</style>
 <body>
     <header>
         <nav>
             <a href="http://localhost/zoologico-terra-selvagem/">Catálogo</a>
-            <a href="http://localhost/zoologico-terra-selvagem/">Inicio</a>
+            <a href="http://localhost/zoologico-terra-selvagem/">Início</a>
             <a href="http://localhost/zoologico-terra-selvagem/login.php">Login</a>
         </nav>
-        <div>
-            Busca<input>
+        <div id="buscador">
+            Busca<input type="text">
         </div>
     </header>
 </body>
