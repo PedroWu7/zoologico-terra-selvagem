@@ -15,8 +15,6 @@ if(!is_null($usuario) && !is_null($senha)){
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +23,7 @@ if(!is_null($usuario) && !is_null($senha)){
     <title>Zoológico Terra Selvagem - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #d3d3d3;">
     <div class="main">
         <?php include("cabecalho.html") ?>
         <div class="conteudo">

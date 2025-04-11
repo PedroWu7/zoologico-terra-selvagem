@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="main">
         <?php include("cabecalho.html");?>
         <div class="conteudo">
-            <h1> Adicionar novo jogo</h1>
+            <h1> Adicionar novo animal</h1>
             <form method="POST">
                 <label>Nome: </label><br>
                 <input type="text" name="nome" required><br><br> 
