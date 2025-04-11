@@ -23,12 +23,12 @@ if(!is_null($usuario) && !is_null($senha)){
     <title>Zoológico Terra Selvagem - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #d3d3d3;">
+<body style="background-color:rgb(255, 255, 255);">
     <div class="main">
         <?php include("cabecalho.php") ?>
         <div class="conteudo">
             <h1>Login</h1>
-            <form style="height: 200px" method="post">
+            <form class="formulario" style="height: 200px" method="post">
                 Usuário<br> <input name="usuario" type="text"><br>
                 Senha<br> <input name="senha" type="password"><br>
                 <input style="margin: 10px" type="submit" name="logar" value="Entrar">

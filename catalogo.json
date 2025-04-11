@@ -2,21 +2,25 @@
     {
         "nome": "Gato",
         "imagem": "imagens/gato.jpg",
+        "terrestre": "Terrestre",
         "descricao": "Este animal \u00e9 um gato."
     },
     {
-        "nome": "vaca",
+        "nome": "Vaca",
         "imagem": "https:\/\/th.bing.com\/th\/id\/R.7b7e97f53a043cc70379d009a71c876f?rik=LDeQYVhl9o7N5g&pid=ImgRaw&r=0",
+        "terrestre": "Terrestre",
         "descricao": "vaca 1"
     },
     {
         "nome": "Pato",
         "imagem": "https:\/\/i.pinimg.com\/originals\/87\/bd\/ed\/87bded1ae058122e694c1b09d61f80ab.jpg",
+        "terrestre": "Aquático",
         "descricao": "Pato Pato Pato"
     },
     {
         "nome": "Pato Rodolfo",
         "imagem": "https:\/\/i.imgur.com\/YFNJydX.png",
+        "terrestre": "Aquático",
         "descricao": "Pato 2"
     }
 ]

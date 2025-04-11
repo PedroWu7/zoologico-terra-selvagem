@@ -20,12 +20,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $imagem = $_POST["imagem"];
     $descricao = $_POST["descricao"];
+    $terrestre = $_POST["terrestre"];
 
 
     $novoItem = [
         "nome" => $nome,
         "imagem" => $imagem,
         "descricao" => $descricao,
+        "terrestre " => $terrestre,
     ];
 
     $catalogo[] = $novoItem;
@@ -55,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php include("cabecalho.php");?>
         <div class="conteudo">
             <h1> Adicionar novo animal</h1>
-            <form method="POST">
+            <form class="formulario" method="POST">
                 <label>Nome: </label><br>
                 <input type="text" name="nome" required><br><br> 
         

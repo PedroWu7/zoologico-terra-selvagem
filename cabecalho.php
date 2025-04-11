@@ -1,11 +1,28 @@
 <?php 
-$arquivo = $catalogo
 
 
+$arquivo = "catalogo.json";
+if (isset($_GET['pesquisa']) && $_GET['pesquisa'] !== '') {
+    $termo = strtolower($_GET['pesquisa']);
+    $resultados = [];
+    if(file_exists($arquivo)) {
+        $json = file_get_contents($arquivo);
+        $catalogo = json_decode($json, true);
+        // Filtrando os itens do catálogo com base no termo de pesquisa
+        foreach ($catalogo as $item) {
+            if (strpos(strtolower($item['nome']), $termo) !== false || strpos(strtolower($item['descricao']),  $termo) !== false|| strpos(strtolower($item['terrestre']),  $termo) !== false) {
+                $resultados[] = $item;
+            }
+        }
+    }
+}else {
+    // Se não houver pesquisa, exibe todos os itens
+    $resultados = $catalogo;
+}
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +33,16 @@ $arquivo = $catalogo
             height: 7%;
             flex-direction: row;
             background-color: black;
-            justify-content: space-between; /* Distribui o espaço entre a navegação e a busca */
+            justify-content: space-between;
             align-items: center;
-            padding: 0 20px; /* Adiciona um padding para não colar os elementos nas bordas */
+            padding: 0 20px;
         }
 
         nav {
             display: flex;
-            justify-content: center; /* Centraliza os links de navegação */
+            justify-content: center;
             flex-direction: row;
-            width: 100%; /* Faz o nav ocupar todo o espaço disponível */
+            width: 100%;
         }
 
         a {
@@ -37,7 +54,7 @@ $arquivo = $catalogo
 
         #buscador {
             display: flex;
-            justify-content: flex-end; /* Alinha o buscador à direita */
+            justify-content: flex-end;
             align-items: center;
             color: white;
         }
@@ -46,7 +63,6 @@ $arquivo = $catalogo
             margin-left: 10px;
             padding: 5px;
         }
-
     </style>
 </head>
 <body>
@@ -57,9 +73,10 @@ $arquivo = $catalogo
             <a href="http://localhost/zoologico-terra-selvagem/login.php">Login</a>
         </nav>
         <div id="buscador">
-            
-            <input type="text" name="busca">
-            <button type="submit">Buscar</button>
+            <form method="GET">
+                <input type="text" name="pesquisa" placeholder="Buscar animais...">
+                <button type="submit">Buscar</button>
+            </form>
         </div>
     </header>
 </body>
