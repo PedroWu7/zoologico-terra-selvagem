@@ -50,9 +50,10 @@ if(file_exists($arquivo)) {
                     <div class="item">
                         <h2><?php echo $item['nome']; ?></h2>
                         <img src="<?php echo $item['imagem']; ?>"alt="<?php echo $item['nome'];?> ">
-                        <p><?php echo $item['descricao']; ?></p>
+                        <?php $animal = $item['nome']; ?>
+                        <?php echo "<a href='detalhes-animal.php?animal=" . $animal . "' class='botao-ver-mais' style='color: black'>Ver mais</a>"; ?>
                     </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
