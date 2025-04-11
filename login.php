@@ -25,7 +25,7 @@ if(!is_null($usuario) && !is_null($senha)){
 </head>
 <body style="background-color: #d3d3d3;">
     <div class="main">
-        <?php include("cabecalho.html") ?>
+        <?php include("cabecalho.php") ?>
         <div class="conteudo">
             <h1>Login</h1>
             <form style="height: 200px" method="post">

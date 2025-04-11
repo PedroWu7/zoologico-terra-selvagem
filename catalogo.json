@@ -1,7 +1,7 @@
 [
     {
         "nome": "Gato",
-        "imagem": "gato.jpg",
+        "imagem": "imagens/gato.jpg",
         "descricao": "Este animal \u00e9 um gato."
     },
     {

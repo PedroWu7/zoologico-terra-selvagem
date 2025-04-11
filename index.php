@@ -43,7 +43,7 @@ if(file_exists($arquivo)) {
 </style>
 <body>
     <div class="main">
-        <?php include("cabecalho.html");?>
+        <?php include("cabecalho.php");?>
         <div class="conteudo">
             <div class="animais">
                 <?php foreach($catalogo as $item): ?>

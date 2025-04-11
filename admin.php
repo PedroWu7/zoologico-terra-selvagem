@@ -52,7 +52,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 </style>
 <body>
     <div class="main">
-        <?php include("cabecalho.html");?>
+        <?php include("cabecalho.php");?>
         <div class="conteudo">
             <h1> Adicionar novo animal</h1>
             <form method="POST">

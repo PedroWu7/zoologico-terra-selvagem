@@ -1,3 +1,9 @@
+<?php 
+$arquivo = $catalogo
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +57,9 @@
             <a href="http://localhost/zoologico-terra-selvagem/login.php">Login</a>
         </nav>
         <div id="buscador">
-            Busca<input type="text">
+            
+            <input type="text" name="busca">
+            <button type="submit">Buscar</button>
         </div>
     </header>
 </body>
