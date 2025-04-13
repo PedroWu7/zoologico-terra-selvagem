@@ -34,13 +34,13 @@ if (file_exists($arquivo)) {
         margin: 10px;
         padding: 10px;
         flex-direction: column;
-        width: 200px; /* Ajustando o tamanho das divs */
+        width: 210px; /* Ajustando o tamanho das divs */
         text-align: center;
     }
 
     .item img {
         width: 100%;
-        height: 200px;
+        height: 250px;
         object-fit: cover;
     }
 

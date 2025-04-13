@@ -1,26 +1,26 @@
 [
     {
-        "nome": "Gato",
-        "imagem": "imagens/gato.jpg",
+        "nome": "Mestre Miau",
+        "imagem": "imagens\/gato.jpg",
         "terrestre": "Terrestre",
-        "descricao": "Este animal \u00e9 um gato."
+        "descricao": "Mestre do mist\u00e9rio, dono da casa e especialista em te ignorar com charme. Te julga em sil\u00eancio... e ainda ronrona."
     },
     {
-        "nome": "Vaca",
-        "imagem": "https:\/\/th.bing.com\/th\/id\/R.7b7e97f53a043cc70379d009a71c876f?rik=LDeQYVhl9o7N5g&pid=ImgRaw&r=0",
-        "terrestre": "Terrestre",
-        "descricao": "vaca 1"
-    },
-    {
-        "nome": "Pato",
+        "nome": "Quackzilla",
         "imagem": "https:\/\/i.pinimg.com\/originals\/87\/bd\/ed\/87bded1ae058122e694c1b09d61f80ab.jpg",
-        "terrestre": "Aquático",
-        "descricao": "Pato Pato Pato"
+        "terrestre": "Aqu\u00e1tico",
+        "descricao": "Ningu\u00e9m manda mais que ele no lago. Olhar afiado, bico afiado, atitude afiada. Quack e tapa na cara ao mesmo tempo."
     },
     {
-        "nome": "Pato Rodolfo",
-        "imagem": "https:\/\/i.imgur.com\/YFNJydX.png",
-        "terrestre": "Aquático",
-        "descricao": "Pato 2"
+        "nome": "On\u00e7a Closeira",
+        "imagem": "https:\/\/diariodonordeste.verdesmares.com.br\/image\/contentid\/policy:1.3233861:1653166863\/On%C3%A7a-parda.jpg?f=16x9&$p$f=39740b1",
+        "terrestre": "Terrestre",
+        "descricao": "Ela desfila, n\u00e3o anda. Te encara, voc\u00ea treme. \u00c9 selvagem, \u00e9 linda, e n\u00e3o precisa de filtro pra causar."
+    },
+    {
+        "nome": "Capit\u00e3o Pombomba",
+        "imagem": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcT2ZScQnq6ZzXPczt3duLxw7Fn1n7UVK5hQBQ&s",
+        "descricao": "Veterano das guerras do p\u00e3o amanhecido. Carrega dinamites e segredos do governo. Se voar em c\u00edrculos acima de voc\u00ea... corre.",
+        "terrestre": "A\u00e9reo"
     }
 ]
